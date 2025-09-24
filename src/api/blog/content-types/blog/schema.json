@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seoData": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.seo"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "publishedDate": {
+      "type": "datetime"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "metadescription": {
+      "type": "text"
+    },
+    "website_name": {
+      "type": "enumeration",
+      "enum": [
+        "anandrathipcg.com",
+        "arpreferred.com",
+        "anandrathipms.com"
+      ]
+    },
+    "faq": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.rich-text"
+      ]
+    }
+  }
+}
